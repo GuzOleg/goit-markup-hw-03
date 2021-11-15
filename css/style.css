@@ -1,4 +1,4 @@
-/* Переменные */
+/* ------- Переменные ------ */
 :root {
   --title-color: #212121;
   --text-main: #757575;
@@ -10,6 +10,21 @@
   --bt-background:#F5F4FA;
 }
 
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
 body {
   font-family: "Roboto", sans-serif;
   color: var(--text-main);
@@ -17,13 +32,23 @@ body {
 }
 
 section {
-    align-items: center;
+  margin: 0;
 }
-/* Скрыть H1*/
+
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+  padding-top: 25px;
+  padding-bottom: 25px; 
+}
+
+/* ------- Скрыть H1 ------- */
 .title-hiden {
   display:none;
 }
-/* Работа со ссылками */
+/* ------- Работа со ссылками ------- */
 .link {
   text-decoration: none;
   color: var(--title-color);
@@ -33,12 +58,12 @@ section {
   color: var(--item-on);
 }
 
-/* Обнуление стиля списков */
+/* ------- Обнуление стиля списков ------- */
 .list li {
   list-style: none;
 }
 
-/* Отображение логотипа */
+/* ------- Отображение логотипа ------- */
 .logo {
   font-family: Raleway;
   font-weight: 700;
@@ -46,6 +71,7 @@ section {
   line-height: 1.19;
   letter-spacing: 0.03em;
   color: var(--title-color);
+  margin-right: 95px;
 }
 .logo:hover {
   color: var(--title-color);
@@ -54,7 +80,19 @@ section {
   color: var(--item-on);
 }
 
-/* Меню навигации */
+/* ------- Меню навигации ------- */
+.header-list {
+  display: flex;
+}
+.heder-navigation {
+  display: flex;
+  align-items: center;
+}
+.header-container {
+  display: flex;
+  align-items: center;
+}
+
 .navig {
   font-weight: 500;
   font-size: 14px;
@@ -62,14 +100,21 @@ section {
   letter-spacing: 0.02em;
   color: var(--title-color);
 }
+
+.navig-item:not(:last-child) {
+  margin-right: 30px;
+}
 .navig:hover {
   color: var(--item-on);
 }
 .contacts {
   color: var(--text-main);
 }
+.header-connect {
+  margin-left: auto;
+}
 
-/* Заказ услуг */
+/* ------- Заказ услуг ------- */
 .title-services {
     font-weight: 900;
     font-size: 44px;
@@ -95,7 +140,7 @@ section {
   border-width: 0;   
 }
 
-/* Ценности */
+/* ------- Ценности ------- */
 .sect-values {
     font-weight: 700;
     font-size: 14px;
@@ -110,7 +155,7 @@ section {
     letter-spacing: 0.03em;
 }
 
-/* Заголовки секций */
+/* ------- Заголовки секций ------- */
 .title-sections {
     font-weight: 700;
     font-size: 36px;
@@ -120,7 +165,7 @@ section {
     color: var(--title-color);
 }
 
-/* Члены команды */
+/* ------- Члены команды ------- */
 .title-member {
     font-weight: 500;
     font-size: 16px;
@@ -136,7 +181,7 @@ section {
     letter-spacing: 0.03em;
 }
 
-/* Портфолио */
+/* ------- Портфолио ------- */
 .title-portfolio {
   font-weight: 700;
   font-size: 18px;
@@ -169,7 +214,7 @@ section {
     
 }
 
-/* Оформление футера */
+/* ------- Оформление футера ------- */
 footer .logo,
 footer .logo:hover {
     color:var(--item-off)
