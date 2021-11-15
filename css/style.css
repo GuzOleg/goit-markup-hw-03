@@ -8,6 +8,7 @@
   --section-background: #e5e5e5;
   --section-bg:#2F303A;
   --bt-background:#F5F4FA;
+  --head-line: #ececec;
 }
 
 p,
@@ -98,6 +99,7 @@ section {
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--title-color);
+  border-bottom: 1px solid var(--head-line);
 }
 
 .navig-item {
@@ -241,6 +243,17 @@ section {
 }
 
 /* ------- Портфолио ------- */
+.filter-portfolio-box {
+  display: flex;
+  margin: 95px 0 50px 0;
+  justify-content: center;
+  
+}
+.filter-portfolio-box .list:nth-child(1n) {
+  display: flex;
+  margin: 0 8px 0 0;
+}
+
 .title-portfolio {
   font-weight: 700;
   font-size: 18px;
@@ -265,13 +278,16 @@ section {
   color: var(--title-color);
   background-color: var(--bt-background); 
   border-width: 0;
-  margin: 2px;
+  padding: 6px 22px 6px 22px;
+  border-radius: 4px; 
 }
 .bt-portfolio:hover {
   color: var(--item-off);
-  background-color: var(--item-on); 
-    
+  background-color: var(--item-on);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+  border-radius: 4px; 
 }
+
 
 /* ------- Оформление футера ------- */
 footer .logo,
