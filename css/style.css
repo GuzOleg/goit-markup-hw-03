@@ -252,9 +252,16 @@ section {
 .filter-portfolio-box li:not(:last-child){
   display: flex;
   margin-right: 8px;
-  
 }
+.portfolio-box {
+  display: flex;
+  /* margin: 95px 0 50px 0; */
+  flex-wrap: wrap;
 
+}
+.portfolio-box li {
+  margin: 5px 5px;
+}
 .title-portfolio {
   font-weight: 700;
   font-size: 18px;
