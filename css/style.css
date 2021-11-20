@@ -9,6 +9,7 @@
   --section-bg: #2f303a;
   --bt-background: #f5f4fa;
   --head-line: #ececec;
+  --portfolio-box: #eeeeee;
 }
 
 p,
@@ -252,24 +253,51 @@ p {
   margin-bottom: 10px;
 }
 
-/* ------- Портфолио ------- */
+/* ------- Портфолио меню ------- */
 .filter-portfolio-box {
   display: flex;
-  margin: 95px 0 50px 0;
+  /* margin: 95px 0 50px 0; */
   justify-content: center;
+  padding: 95px 0 50px 0;
+}
+.filter-portfolio-box ul {
+  display: flex;
 }
 .filter-portfolio-box li:not(:last-child) {
-  display: flex;
+  /* display: flex; */
   margin-right: 8px;
 }
+
+/* ------- Портфолио ------- */
 .portfolio-box {
   display: flex;
-  /* margin: 95px 0 50px 0; */
   flex-wrap: wrap;
 }
-.portfolio-box li {
-  margin: 5px 5px;
+
+.portfolio-box li:nth-child(3n) {
+  margin-right: 0px;
 }
+
+.portfolio-box li {
+  /* border: 1px solid var(--portfolio-box); */
+  margin: 0 27px 30px 0;
+  
+  
+}
+.portfolio-box ul {
+  margin: 0 -30px -30px 0;
+  border: -1px;
+  /* border: -1px solid transparent; */
+}
+
+.potfolio-frame {
+  border: 1px solid var(--portfolio-box);
+}
+
+.portfolio-box .portfolio-text-box {
+  padding: 20px 24px;
+}
+
 .title-portfolio {
   font-weight: 700;
   font-size: 18px;
