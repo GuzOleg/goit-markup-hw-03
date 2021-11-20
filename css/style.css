@@ -6,8 +6,8 @@
   --item-on: #2196f3;
   --item-off: #ffffff;
   --section-background: #e5e5e5;
-  --section-bg:#2F303A;
-  --bt-background:#F5F4FA;
+  --section-bg: #2f303a;
+  --bt-background: #f5f4fa;
   --head-line: #ececec;
 }
 
@@ -18,16 +18,16 @@ h3,
 h4,
 h5,
 h6 {
-    margin: 0;
+  margin: 0;
 }
 
 ul {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   color: var(--text-main);
   background-color: #ffffff;
 }
@@ -37,7 +37,7 @@ section {
 }
 
 .container {
-  width: 1170px;
+  width: 1200px;
   margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px;
@@ -109,7 +109,6 @@ section {
 
 .navig-item:not(:last-child) {
   margin-right: 30px;
-
 }
 .navig:hover {
   color: var(--item-on);
@@ -137,7 +136,7 @@ section {
   padding-bottom: 200px;
   padding-top: 200px;
   text-align: center;
-  margin-bottom: 95px;
+  /* margin-bottom: 95px; */
 }
 .button-hero {
   font-family: inherit;
@@ -147,13 +146,12 @@ section {
   text-align: center;
   letter-spacing: 0.06em;
   color: var(--item-off);
-  background-color: var(--item-on); 
-  cursor: pointer; 
-  min-width: 200;
-  min-height: 50;
-  border: 1px solid var(--item-on); 
+  background-color: var(--item-on);
+  cursor: pointer;
+  min-width: 200px;
+  min-height: 50px;
+  border: 1px solid var(--item-on);
   border-radius: 4px;
-  
 }
 .hero {
   display: flexbox;
@@ -168,7 +166,6 @@ section {
   text-transform: uppercase;
   color: var(--title-color);
   margin-bottom: 10px;
-  
 }
 .values-text {
   font-size: 14px;
@@ -178,14 +175,21 @@ section {
 .values-box {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 95px;
+  /* margin-bottom: 95px; */
+  padding-top: 95px;
+  padding-bottom: 95px;
 }
 .values-box .list {
   display: flex;
   justify-content: space-between;
 }
+.values-box li {
+  width: 270px;
+  height: 100px;
+}
 .values-box li:not(:last-child) {
   margin: 0 30px 0 0;
+  
 }
 
 /* ------- Заголовки секций ------- */
@@ -203,7 +207,8 @@ section {
 .wedoing-box {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 95px;
+  /* padding-top: 95px; */
+  padding-bottom: 95px;
 }
 
 /* ------- Члены команды ------- */
@@ -222,20 +227,25 @@ section {
   letter-spacing: 0.03em;
 }
 .bg-member {
- background-color: var(--bt-background);
- padding: 95px 0 95px 0;
+  background-color: var(--bt-background);
+  padding: 95px 0 95px 0;
 }
 
 .team-box {
   display: flex;
-  justify-content: space-between;
+  /* justify-content: space-between; */
+}
+.team-box li:not(:last-child) {
+ margin-right: 30px;
 }
 .team-box li {
   background-color: var(--item-off);
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
-.team-box img, p {
+.team-box img,
+p {
   margin-bottom: 30px;
 }
 .team-box h3 {
@@ -247,9 +257,8 @@ section {
   display: flex;
   margin: 95px 0 50px 0;
   justify-content: center;
-  
 }
-.filter-portfolio-box li:not(:last-child){
+.filter-portfolio-box li:not(:last-child) {
   display: flex;
   margin-right: 8px;
 }
@@ -257,7 +266,6 @@ section {
   display: flex;
   /* margin: 95px 0 50px 0; */
   flex-wrap: wrap;
-
 }
 .portfolio-box li {
   margin: 5px 5px;
@@ -284,23 +292,23 @@ section {
   letter-spacing: 0.03em;
   cursor: pointer;
   color: var(--title-color);
-  background-color: var(--bt-background); 
+  background-color: var(--bt-background);
   border-width: 0;
   padding: 6px 22px 6px 22px;
-  border-radius: 4px; 
+  border-radius: 4px;
 }
 .bt-portfolio:hover {
   color: var(--item-off);
   background-color: var(--item-on);
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-  border-radius: 4px; 
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
 }
-
 
 /* ------- Оформление футера ------- */
 footer .logo,
 footer .logo:hover {
-  color:var(--item-off);
+  color: var(--item-off);
 }
 .logo-bottom {
   margin-bottom: 20px;
@@ -311,7 +319,7 @@ footer .logo:hover {
   padding: 60px 0 60px 0;
 }
 .contact-box {
-  display: flexbox;
+  /* display: flex; */
 }
 
 .location {
@@ -328,5 +336,8 @@ address .link:hover {
   line-height: 1.71;
   letter-spacing: 0.03em;
   font-style: normal;
-  color:var(--text-footer)
+  color: var(--text-footer);
+  }
+address div {
+  margin-bottom: 9px;
 }
