@@ -272,6 +272,7 @@ p {
 .portfolio-box {
   display: flex;
   flex-wrap: wrap;
+  padding-bottom: 95px;
 }
 
 .portfolio-box li:nth-child(3n) {
